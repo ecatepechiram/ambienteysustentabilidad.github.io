@@ -1,0 +1,171 @@
+/* Estilos generales */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #e7f5e9; /* Color de fondo claro y natural */
+    color: #2f4f2f; /* Color de texto verde oscuro */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+	text-align: justify;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    padding-bottom: 10px;
+    color: #1e5631; /* Verde más intenso para los títulos */
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* Estilos para la cabecera */
+.head {
+    background: linear-gradient(135deg, #4CAF50, #81C784); /* Gradiente verde natural */
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu p {
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #388E3C; /* Verde oscuro para los botones del menú */
+    color: white;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.menu p:hover {
+    background-color: #66BB6A; /* Verde más claro al hacer hover */
+    text-decoration: none;
+}
+
+/* Estilos para el contenido */
+.content {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+/* Ocultar todo el contenido excepto el activo */
+[data-content] {
+    display: none;
+}
+
+[data-content].active {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animación suave para cuando aparece el contenido */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+}
+.contenido {
+    animation-name: fadeIn;
+    animation-duration: 3s; /* Duración de la animación */
+}
+
+/* Estilo para la disposición del texto y la imagen lado a lado */
+.content-container {
+    display: flex;
+    align-items: flex-start; /* Alinear los elementos al inicio */
+    justify-content: space-between; /* Separar texto e imagen */
+    gap: 20px; /* Espacio entre el texto y la imagen */
+    margin-bottom: 20px;
+}
+
+/* Estilo para el texto */
+.text {
+    flex: 1; /* Permite que el texto ocupe el espacio disponible */
+    max-width: calc(100% - 270px); /* Ajusta el ancho del texto, asegurando espacio para la imagen */
+}
+
+.text p {
+    font-size: 18px; /* Tamaño del texto */
+}
+
+/* Estilo para la imagen */
+.image-container {
+    flex-shrink: 0; /* Evitar que la imagen se reduzca de tamaño */
+}
+
+.image-container img {
+    width: 250px; /* Ajusta el tamaño de la imagen */
+    height: 250px; /* Ajusta el tamaño de la imagen */
+    border-radius: 50%; /* Borde redondeado */
+    object-fit: cover; /* Asegura que la imagen cubra el área especificada */
+}
+
+/* Estilo adicional para el fondo */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url('https://www.wonderwall.sg/images/cityscape-images/pulau_ubin_sunrise-unsplash.jpg') no-repeat center center/cover;
+    z-index: -1;
+    filter: blur(8px);
+    opacity: 0.5;
+}
+/*estilo general de imágenes*/
+
+
+.content-container2{
+	display:flex;
+	align-items: flex-start; /* Alinear los elementos al inicio */
+    justify-content: space-between; /* Separar texto e imagen */
+    gap: 10px; /* Espacio entre el texto y la imagen */
+    margin-bottom: 20px;
+}
+.image-container2 img {
+    width: 300px; /* Ajusta el tamaño de la imagen */
+    height: 300px; /* Ajusta el tamaño de la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra el área especificada */
+}
+.text2{
+	flex: 1; /* Permite que el texto ocupe el espacio disponible */
+    max-width: calc(100% - 300px); /* Ajusta el ancho del texto, asegurando espacio para la imagen */
+}
+ 
+  .image-container3 img {
+	margin-top: 20px; /* Espacio superior */
+    width: 70%; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción */
+    display: block; /* Asegura que el margin auto funcione */
+    margin-left: auto; /* Centra horizontalmente */
+    margin-right: auto; /* Centra horizontalmente */
+}
+
+
+
+.content-container3{
+	display:flex;
+	align-items: flex-start; /* Alinear los elementos al inicio */
+    justify-content: space-between; /* Separar texto e imagen */
+    gap: 15px; /* Espacio entre el texto y la imagen */
+    margin-top: 0px;
+}
+.text3{
+	flex: 1; /* Permite que el texto ocupe el espacio disponible */
+    max-width: calc(100% - 300px); /* Ajusta el ancho del texto, asegurando espacio para la imagen */
+}
+  .image-container4 img {
+	width: 300px; /* Ajusta el tamaño de la imagen */
+    height: 300px; /* Ajusta el tamaño de la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra el área especificada */
+}
